@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home Services Missed Lead Audit | G-Nosis Systems</title>
+  <meta name="description" content="G-Nosis Systems helps HVAC, plumbing, roofing, electrical, and other home-service businesses find missed calls, weak follow-up, and leaky contact forms — starting with a free Missed Lead Risk Scan." />
+  <meta property="og:title" content="Home Services Missed Lead Audit" />
+  <meta property="og:description" content="Find and fix where home-service leads fall through the cracks. Free Missed Lead Risk Scan from G-Nosis Systems." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0B1220" />
+  <style>
+    :root {
+      --navy:#0B1220;
+      --panel:#111B2F;
+      --blue:#2563EB;
+      --teal:#14B8A6;
+      --white:#F5FAFF;
+      --muted:#B7C7D9;
+      --line:rgba(255,255,255,.14);
+      --shadow:0 24px 70px rgba(0,0,0,.34);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      margin:0;
+      font-family:Avenir Next, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color:var(--white);
+      background:
+        radial-gradient(circle at 80% 8%, rgba(20,184,166,.28), transparent 30%),
+        radial-gradient(circle at 10% 88%, rgba(37,99,235,.26), transparent 36%),
+        linear-gradient(135deg,#050814 0%, var(--navy) 42%, #102A55 100%);
+      min-height:100vh;
+    }
+    a{color:inherit}
+    .wrap{width:min(1120px, calc(100% - 40px)); margin:0 auto;}
+    header{padding:28px 0 18px; display:flex; align-items:center; justify-content:space-between; gap:24px;}
+    .brand{display:flex; align-items:center; gap:13px; text-decoration:none;}
+    .logo{width:48px;height:48px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;box-shadow:0 12px 34px rgba(20,184,166,.28)}
+    .logo svg{width:35px;height:35px}
+    .brand-name{font-weight:850;letter-spacing:-.45px;font-size:18px;line-height:1.05}
+    .tag{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);font-weight:750;margin-top:3px}
+    .nav-note{font-size:13px;color:var(--muted);font-weight:650;text-align:right}
+    .hero{padding:74px 0 52px; display:grid; grid-template-columns:1.05fr .95fr; gap:42px; align-items:center;}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.06);color:#CFFCF6;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;font-weight:850;margin-bottom:22px;}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 18px var(--teal)}
+    h1{font-size:clamp(42px, 6vw, 74px);line-height:.94;letter-spacing:-3.2px;margin:0 0 24px;}
+    .lead{font-size:clamp(18px,2.15vw,23px);line-height:1.42;color:#D8E7F5;max-width:740px;margin:0 0 30px;}
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:30px;}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 20px;border-radius:16px;text-decoration:none;font-weight:850;border:1px solid transparent;transition:.18s ease;}
+    .btn-primary{background:linear-gradient(135deg,var(--blue),var(--teal));color:white;box-shadow:0 18px 42px rgba(37,99,235,.28)}
+    .btn-secondary{background:rgba(255,255,255,.07);border-color:var(--line);color:#E8F2FF}
+    .btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
+    .trust{font-size:13px;color:var(--muted);margin-top:14px;line-height:1.5}
+    .visual{position:relative;min-height:500px;border:1px solid var(--line);border-radius:34px;background:linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,.045));box-shadow:var(--shadow);overflow:hidden;padding:24px;}
+    .visual:before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle, rgba(20,184,166,.26), transparent 34%);animation:float 9s ease-in-out infinite alternate;}
+    @keyframes float{from{transform:translate(-6%, -2%)}to{transform:translate(8%, 4%)}}
+    .scan-card{position:relative;height:100%;border-radius:25px;background:#F8FAFC;color:#0F172A;padding:26px;box-shadow:0 20px 70px rgba(0,0,0,.25);display:flex;flex-direction:column;justify-content:space-between;}
+    .brief-rule{height:4px;width:68%;background:linear-gradient(90deg,var(--blue),var(--teal));border-radius:99px;margin-bottom:22px;}
+    .scan-title{font-size:31px;line-height:1.02;letter-spacing:-1.2px;font-weight:900;margin-bottom:14px;color:#0B1220;}
+    .scan-sub{font-size:14px;line-height:1.5;color:#475569;font-weight:650;}
+    .risk-list{display:grid;gap:10px;margin-top:24px;}
+    .risk{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid #E2E8F0;border-radius:16px;background:white;}
+    .num{width:30px;height:30px;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--teal));color:white;display:grid;place-items:center;font-weight:900;font-size:13px;flex:0 0 auto;}
+    .risk span{font-weight:800;font-size:13px;color:#172033;line-height:1.35}
+    section{padding:42px 0;}
+    .section-title{font-size:34px;line-height:1.05;letter-spacing:-1.2px;margin:0 0 12px;}
+    .section-lead{color:#CDDAE8;font-size:17px;line-height:1.5;margin:0 0 26px;max-width:780px;}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+    .tile{background:rgba(255,255,255,.075);border:1px solid var(--line);border-radius:22px;padding:18px;min-height:190px;}
+    .tile b{display:block;color:#7DF4E6;font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;}
+    .tile h3{font-size:18px;line-height:1.15;margin:0 0 10px;letter-spacing:-.45px;}
+    .tile p{font-size:13.5px;line-height:1.45;color:#C9D7E8;margin:0;}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;}
+    .price-card{background:#F8FAFC;color:#0F172A;border-radius:26px;padding:24px;box-shadow:0 18px 48px rgba(0,0,0,.18);position:relative;overflow:hidden;}
+    .price-card.featured{outline:2px solid rgba(20,184,166,.75);transform:translateY(-4px)}
+    .price-card:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--blue),var(--teal));}
+    .badge{display:inline-flex;border-radius:999px;background:#E7FDF8;color:#0F766E;font-size:11px;font-weight:900;letter-spacing:.9px;text-transform:uppercase;padding:7px 10px;margin-bottom:14px;}
+    .price-card h3{font-size:22px;line-height:1.05;letter-spacing:-.6px;margin:0 0 8px;color:#0B1220;}
+    .price{font-size:42px;line-height:1;font-weight:950;letter-spacing:-1.7px;margin:14px 0 14px;color:#0B1220;}
+    .price small{font-size:15px;font-weight:800;color:#64748B;letter-spacing:0;}
+    .price-card p,.price-card li{color:#475569;font-size:14px;line-height:1.48;}
+    .price-card ul{padding-left:18px;margin:16px 0 0;}
+    .addon{margin-top:18px;padding-top:16px;border-top:1px solid #E2E8F0;color:#334155;font-size:13.5px;line-height:1.45;}
+    .band{display:grid;grid-template-columns:1fr .78fr;gap:24px;align-items:center;background:linear-gradient(135deg,rgba(37,99,235,.24),rgba(20,184,166,.18));border:1px solid var(--line);border-radius:30px;padding:30px;margin:36px 0 8px;box-shadow:var(--shadow)}
+    .band h2{font-size:31px;letter-spacing:-1px;line-height:1.06;margin:0 0 12px}
+    .band p{color:#D8E7F5;margin:0;font-size:16px;line-height:1.5}
+    .contact-box{background:rgba(11,18,32,.62);border:1px solid var(--line);border-radius:22px;padding:18px;color:#D8E7F5;font-size:14px;line-height:1.45;}
+    .contact-box strong{color:white;display:block;margin-bottom:8px;font-size:16px;}
+    .mini-note{font-size:12px;line-height:1.4;color:#AFC0D3;margin:12px 0 0;}
+    footer{padding:34px 0 44px;color:#92A5BA;font-size:13px;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);margin-top:30px;}
+    @media (max-width:980px){.hero{grid-template-columns:1fr;padding-top:42px}.grid{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr}.band{grid-template-columns:1fr}.nav-note{text-align:left}header{align-items:flex-start;flex-direction:column}.visual{min-height:420px}.price-card.featured{transform:none}}
+    @media (max-width:560px){.wrap{width:min(100% - 26px,1120px)}h1{letter-spacing:-2px}.grid{grid-template-columns:1fr}.tile{min-height:auto}.cta-row .btn{width:100%}footer{flex-direction:column}.scan-title{font-size:25px}.visual{padding:16px;min-height:auto}.scan-card{padding:20px}.price{font-size:36px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="https://g-nosis.com" aria-label="G-Nosis Systems">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 292 292" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="146" cy="146" r="112" fill="none" stroke="#F5FAFF" stroke-width="8" opacity=".95"/>
+            <circle cx="146" cy="146" r="44" fill="rgba(245,250,255,.22)"/>
+            <circle cx="146" cy="146" r="17" fill="#0B1220"/><circle cx="146" cy="146" r="8" fill="#14B8A6"/>
+          </svg>
+        </div>
+        <div><div class="brand-name">G-Nosis Systems</div><div class="tag">Insight, engineered.</div></div>
+      </a>
+      <div class="nav-note">Home Services AI Audit · Tomball / Spring / Houston</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Missed Lead Risk Scan</div>
+          <h1>Stop losing booked jobs to missed calls and weak follow-up.</h1>
+          <p class="lead">G-Nosis Systems helps HVAC, plumbing, roofing, electrical, and other home-service businesses find the places where leads fall through the cracks — then shows practical AI and automation fixes that fit the way your team already works.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:veronica@g-nosis.com?subject=Free%20Missed%20Lead%20Risk%20Scan&body=Hi%20Veronica%2C%0A%0AI%27d%20like%20a%20free%20Missed%20Lead%20Risk%20Scan%20for%20my%20home%20services%20business.%0A%0ABusiness%20name%3A%0AWebsite%3A%0AService%20area%3A%0APriority%20service%3A%0ABest%20way%20to%20reach%20me%3A%0A%0AThanks!">Request a Free Scan</a>
+            <a class="btn btn-secondary" href="#pricing">See pricing</a>
+          </div>
+          <div class="trust">Built for practical lead capture — not AI hype. No calls placed, no forms submitted, and no external outreach during the free scan.</div>
+        </div>
+
+        <div class="visual" aria-label="Preview of missed lead scan deliverable">
+          <div class="scan-card">
+            <div>
+              <div class="brief-rule"></div>
+              <div class="scan-title">Free Missed Lead Risk Scan</div>
+              <div class="scan-sub">A concise public-facing review of your lead path: website, call visibility, quote/contact forms, after-hours language, and Google Business signals.</div>
+              <div class="risk-list">
+                <div class="risk"><div class="num">1</div><span>Where mobile visitors may hesitate before calling or requesting a quote</span></div>
+                <div class="risk"><div class="num">2</div><span>Where after-hours and emergency inquiries may leak</span></div>
+                <div class="risk"><div class="num">3</div><span>Which simple follow-up automation could recover more booked jobs</span></div>
+                <div class="risk"><div class="num">4</div><span>Whether a deeper audit is worth your time — or not</span></div>
+              </div>
+            </div>
+            <div class="scan-sub"><strong>G-Nosis Systems</strong> · Insight, engineered.</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Where home-service leads usually leak</h2>
+        <p class="section-lead">Most businesses do not need a complicated AI transformation. They need the leads they already paid for to be captured, routed, followed up, and measured consistently.</p>
+        <div class="grid">
+          <article class="tile"><b>01</b><h3>Missed calls</h3><p>Busy crews, after-hours inquiries, and unanswered calls can quietly turn into lost booked jobs.</p></article>
+          <article class="tile"><b>02</b><h3>Slow form follow-up</h3><p>Quote requests lose value quickly when confirmation, routing, and follow-up are manual or inconsistent.</p></article>
+          <article class="tile"><b>03</b><h3>Weak mobile CTA</h3><p>Homeowners on phones need obvious call, quote, emergency, and service-area paths.</p></article>
+          <article class="tile"><b>04</b><h3>No tracking loop</h3><p>If calls, forms, and booked jobs are not tied together, it is hard to know which fixes are working.</p></article>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <h2 class="section-title">Offerings and pricing</h2>
+        <p class="section-lead">Start with the free scan. If there is a real opportunity, choose the audit depth that matches your current lead volume and urgency.</p>
+        <div class="pricing">
+          <article class="price-card">
+            <span class="badge">Lead magnet</span>
+            <h3>Free Missed Lead Risk Scan</h3>
+            <div class="price">$0</div>
+            <p>A concise first look at where booked jobs may be leaking from your public lead path.</p>
+            <ul>
+              <li>1-page PDF scan</li>
+              <li>3–5 observed risks</li>
+              <li>2–3 practical fixes</li>
+              <li>24–48 hour target turnaround</li>
+            </ul>
+          </article>
+
+          <article class="price-card featured">
+            <span class="badge">Most practical</span>
+            <h3>Starter Lead Capture Audit</h3>
+            <div class="price">$297</div>
+            <p>Best for small home-service businesses that want quick clarity and a prioritized fix list.</p>
+            <ul>
+              <li>Website/contact-flow review</li>
+              <li>Mobile call and CTA review</li>
+              <li>Form, email, and phone path review</li>
+              <li>Google Business profile observations</li>
+              <li>5–8 page PDF report</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <span class="badge">Deeper roadmap</span>
+            <h3>Growth Lead Capture Audit</h3>
+            <div class="price">$750</div>
+            <p>Best for businesses with meaningful ad spend, emergency demand, or multiple service lines.</p>
+            <ul>
+              <li>Everything in Starter</li>
+              <li>Competitor comparison</li>
+              <li>After-hours / missed-call risk review</li>
+              <li>Lead response workflow review</li>
+              <li>Tracking and implementation roadmap</li>
+            </ul>
+          </article>
+        </div>
+        <div class="pricing" style="grid-template-columns:repeat(2,1fr);margin-top:16px;">
+          <article class="price-card">
+            <h3>Implementation Sprint</h3>
+            <div class="price"><small>Starts at</small> $1,500</div>
+            <p>For businesses that want help fixing the gaps, not just identifying them.</p>
+            <div class="addon">Examples: missed-call text-back setup, contact form routing, autoresponder copy, simple lead tracker, review request workflow, or reporting dashboard starter.</div>
+          </article>
+          <article class="price-card">
+            <h3>Monthly Lead Capture Monitoring</h3>
+            <div class="price">$500–$1,500<small>/mo</small></div>
+            <p>Ongoing checks and adjustments for businesses that want their lead flow monitored month to month.</p>
+            <div class="addon">Includes monthly lead-flow checks, broken form/contact checks, Google review/reputation monitoring, workflow adjustments, and summary reporting.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band" id="request">
+        <div>
+          <h2>Request the free scan.</h2>
+          <p>Send your business name, website, service area, and priority service line. We’ll review the public lead path and send back practical observations. If a deeper audit is not worth it, we’ll say so plainly.</p>
+        </div>
+        <div class="contact-box">
+          <strong>Email Veronica at G-Nosis Systems</strong>
+          <a class="btn btn-primary" href="mailto:veronica@g-nosis.com?subject=Free%20Missed%20Lead%20Risk%20Scan&body=Hi%20Veronica%2C%0A%0AI%27d%20like%20a%20free%20Missed%20Lead%20Risk%20Scan%20for%20my%20home%20services%20business.%0A%0ABusiness%20name%3A%0AWebsite%3A%0AService%20area%3A%0APriority%20service%3A%0ABest%20way%20to%20reach%20me%3A%0A%0AThanks!" style="width:100%;">Start with the free scan</a>
+          <p class="mini-note">You are not signing up for software or a retainer. The free scan is a practical first look at observable missed-lead risks.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© 2026 G-Nosis Systems · Tomball, TX</div>
+      <div>Home Services AI Audit · Draft landing page for approval</div>
+    </footer>
+  </div>
+</body>
+</html>
