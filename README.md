@@ -1,6 +1,6 @@
-# Home Services AI Audit Landing Page
+# Missed Lead Risk Scan Landing Page
 
-Static landing page for G-Nosis Systems' Home Services Missed Lead Risk Scan and Lead Capture Audit offerings.
+Static draft landing page for G-Nosis Systems' Missed Lead Risk Scan.
 
 ## Local preview
 
@@ -9,13 +9,12 @@ python3 -m http.server 8765
 # open http://127.0.0.1:8765/
 ```
 
-## Offerings
+## Draft scope
 
-- Free Missed Lead Risk Scan — $0
-- Starter Lead Capture Audit — $297
-- Growth Lead Capture Audit — $750
-- Implementation Sprint — starts at $1,500
-- Monthly Lead Capture Monitoring — $500–$1,500/mo
+- The public page offers a free Missed Lead Risk Scan.
+- Custom work for forms, routing, reporting, and related fixes is quoted privately after the scan.
+- The request form is intentionally nonfunctional draft markup. A backend still needs to be selected and connected before any form submission is enabled.
+- Test calls are made only with the business owner's explicit permission.
 
 ## Brand
 
